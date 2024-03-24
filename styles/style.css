@@ -1,29 +1,41 @@
 .header {
-  padding: 92px 24px 0;
+  padding: 92px 50px 0;
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
   font-size: 18px;
-  gap: 5px;
 }
 
 .header__menu {
   display: grid;
   align-items: center;
-  padding: 34px 37px 37px 24.52px;
+  padding: 44px 36px 39px 0;
 }
 
 .header__links-list {
   display: flex;
-  font-size: 18px;
-  margin-left: 5px;
-  margin-right: -4px;
+  border: 1px #000;
   justify-content: space-between;
   list-style: circle;
 }
 
 .header__links-list-item_no-bullit {
   list-style: none;
+}
+
+.header__link_active {
+  line-height: 21.13px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.header__link {
+  list-style: circle;
+  text-decoration: underline;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.13px;
+  letter-spacing: 0.01em;
 }
 
 .header__logo {
@@ -35,16 +47,22 @@
   height: 105px;
 }
 
+.header__address {
+  padding: 5px 0 2px 184px;
+  border: 1px #000;
+  text-decoration: none;
+}
+
 .address {
-  padding: 0px 27.48px 4px 181px;
   align-items: center;
   line-height: 24.3px;
   font-size: 18px;
-  text-underline-position: under;
+  letter-spacing: 0.01em;
+  font-style: normal;
 }
 
 .cover {
-  margin-top: 92px;
+  margin-top: 96px;
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -77,31 +95,31 @@
 .aligned-text {
   display: block;
   margin-top: 20px;
+  line-height: 100px;
 }
 
 .aligned-text_center {
   text-align: center;
-  line-height: 100px;
 }
 
 .aligned-text_right {
   margin-top: 20px;
   text-align: right;
-  line-height: 100px;
 }
 
 .no-letter-spacing {
   letter-spacing: 0;
-  line-height: 100px;
 }
+
 .cover__description {
   color: #fff;
   display: flex;
   justify-content: end;
   align-items: center;
   margin-top: 134px;
-  padding-bottom: 52px;
+  padding-bottom: 51px;
 }
+
 .cover__description-text {
   font-size: 22px;
   font-weight: 400;
@@ -114,22 +132,15 @@
   padding-right: 76px;
 }
 
-.span {
-  width: 400px;
-  line-height: 28px;
-  letter-spacing: 1.1em;
-  font-size: 22px;
-}
-
 .bet-button {
   border: 1px solid rgba(255, 255, 255, 1);
   font-weight: 500;
   font-size: 22px;
   background-color: transparent;
   color: #fff;
+  padding: 12px 32px;
   text-transform: uppercase;
-  width: 256px;
-  height: 51px;
+  min-width: 256px;
   line-height: 25.83px;
   z-index: 1;
   margin-right: 50px;
@@ -151,13 +162,14 @@
   column-gap: 25px;
   color: #fff;
   margin-top: 27px;
-  margin-bottom: 32px;
+  z-index: 1;
 }
 
 .lots__card-list-item {
   display: grid;
   flex-direction: column;
   flex-grow: 1;
+  margin-bottom: 32px;
 }
 
 .card-link {
@@ -173,16 +185,10 @@
   background-size: cover;
   min-height: 100%;
   background-position: center;
+  position: absolute;
   position: relative;
   inset: 0;
-  height: 563px;
-  z-index: 1;
-}
-
-.card .overlay {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  min-height: 563px;
 }
 
 .card_type_film {
@@ -197,6 +203,7 @@
   text-transform: uppercase;
   line-height: 26.4px;
   flex-wrap: nowrap;
+  z-index: 1;
 }
 
 .card__text {
@@ -204,6 +211,7 @@
   font-size: 20px;
   padding: 0 40px 48px;
   line-height: 24px;
+  z-index: 1;
 }
 
 .card_type_book {
@@ -225,8 +233,11 @@
 
 .about {
   display: flex;
-  padding: 147px 24px 180px;
+  justify-content: space-between;
+  padding: 147px 24px 0;
+  gap: 68px;
 }
+
 .about__column {
   display: flex;
   flex-direction: column;
@@ -235,10 +246,11 @@
   margin-left: 4px;
   gap: 24px;
 }
+
 .about__logo {
   display: flex;
   margin-left: 47px;
-  margin-top: 33px;
+  margin-top: 32px;
   justify-content: center;
   align-items: center;
   min-width: 240px;
@@ -247,76 +259,75 @@
   background-color: #000;
   border-radius: 50%;
 }
+
 .about__logo-image {
   width: 148px;
   height: 114px;
 }
+
 .about__title {
-  text-transform: uppercase;
-  display: flex;
-  flex-direction: column;
   font-size: 40px;
   font-weight: 700;
   line-height: 46.96px;
-  width: 291px;
-  height: 47px;
-  padding: 135px 0 122px 68px;
+  margin-top: 135px;
+  margin-bottom: 75px;
+  text-transform: uppercase;
 }
+
 .about__text {
   flex-direction: column;
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
-  margin-left: 68px;
   letter-spacing: 0.01em;
 }
+
 .footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 112px;
-  margin-bottom: 88px;
-}
-.footer__address {
-  margin-left: 50px;
-  border: 1px #000;
-  align-items: center;
-  line-height: 25px;
-  font-size: 18px;
-  text-underline-position: under;
+  column-gap: 140px;
+  padding: 180px 50px 88px;
 }
 
 .footer__menu {
   display: flex;
   justify-content: center;
-}
-.footer__menu-list {
-  text-decoration: none;
-}
-.footer__menu-list-item {
   display: grid;
   font-size: 18px;
   justify-content: center;
 }
+
+.footer__menu-list {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.footer__menu-list-item {
+  display: grid;
+  justify-content: center;
+}
+
 .footer__menu-link {
   text-decoration: underline;
-  margin-left: 66px;
 }
+
 .footer__menu-link_active {
   text-decoration: none;
 }
+
 .footer__social-list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  justify-content: space-between;
 }
+
 .footer__social-list-item {
   list-style: none;
-  display: flex;
-  flex-wrap: nowrap;
-  margin-right: 50px;
 }
+
 .footer__social-link {
-  margin-left: 48px;
+  gap: 48px;
 }
+
 .footer__social-icon {
   width: 48px;
   height: 48px;

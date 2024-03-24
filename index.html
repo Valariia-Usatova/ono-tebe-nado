@@ -14,13 +14,13 @@
       <nav class="header__menu">
         <ul class="header__links-list">
           <li class="header__links-list-item header__links-list-item_no-bullit">
-            <a class="header__link">главная</a>
+            <a class="header__link_active" href="#0">главная</a>
           </li>
           <li class="header__links-list-item">
-            <a class="header__link_active" href="#0">посмотреть лоты</a>
+            <a class="header__link">посмотреть лоты</a>
           </li>
           <li class="header__links-list-item">
-            <a class="header__link_active" href="#0">об аукционе</a>
+            <a class="header__link">об аукционе</a>
           </li>
         </ul>
       </nav>
@@ -31,10 +31,10 @@
           alt="Логотип Оно тебе надо"
         />
       </a>
-      <address class="address">
-        <a href="tel:+99995555555">+9 999 555 5555</a><br />
-        <a href="mailto:info@sobaka.ge">info@sobaka.ge</a><br />
-        наб. Принсенграхт 263- 265, Амстердам<br />
+      <address class="header__address">
+        <a class="address" href="tel:+99995555555">+9 999 555 5555</a><br />
+        <a class="address" href="mailto:info@sobaka.ge">info@sobaka.ge</a><br />
+        <p class="address">наб. Принсенграхт 263- 265, Амстердам</p>
       </address>
     </header>
     <main>
@@ -54,7 +54,7 @@
         </h1>
         <div class="cover__description">
           <p class="cover__description-text">
-            Аукцион вещей, <span class="span">в</span>которые никто не верил
+            Аукцион вещей, в которые никто не верил
           </p>
           <button class="bet-button">Сделать ставку</button>
         </div>
@@ -64,55 +64,51 @@
         <ul class="lots__card-list">
           <li class="lots__card-list-item">
             <a class="card-link">
-              <article class="card card card_type_film">
-                <div class="overlay">
-                  <h3 class="card__title">
-                    Фильм режиссёра, который бросил киношколу
-                  </h3>
-                  <p class="card__text">
-                    Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
-                    ставка, если бы вы не знали, что режиссёр — Пол Томас
-                    Андерсон?
-                  </p>
-                </div>
+              <article class="card card_type_film">
+                <div class="overlay"></div>
+                <h3 class="card__title">
+                  Фильм режиссёра, который бросил киношколу
+                </h3>
+                <p class="card__text">
+                  Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
+                  ставка, если бы вы не знали, что режиссёр — Пол Томас
+                  Андерсон?
+                </p>
               </article>
             </a>
           </li>
           <li class="lots__card-list-item">
             <a class="card-link">
               <article class="card card card_type_book">
-                <div class="overlay">
-                  <h3 class="card__title">
-                    Книга, где описан один скучный день из жизни рекламного
-                    агента
-                  </h3>
-                  <p class="card__text">
-                    Объёмом почти в тысячу страниц. Иногда без знаков препинания
-                    и с переходами на древнеанглийский. В ней одновременно
-                    рассказывается о 16 июня 1904 года и об истории литературы,
-                    начиная с античных времён. И это всё накладывается на
-                    эпическую поэму Гомера. Сколько бы вы поставили на «Улисса»
-                    Джеймса Джойса?
-                  </p>
-                </div>
+                <div class="overlay"></div>
+                <h3 class="card__title">
+                  Книга, где описан один скучный день из жизни рекламного агента
+                </h3>
+                <p class="card__text">
+                  Объёмом почти в тысячу страниц. Иногда без знаков препинания и
+                  с переходами на древнеанглийский. В ней одновременно
+                  рассказывается о 16 июня 1904 года и об истории литературы,
+                  начиная с античных времён. И это всё накладывается на
+                  эпическую поэму Гомера. Сколько бы вы поставили на «Улисса»
+                  Джеймса Джойса?
+                </p>
               </article>
             </a>
           </li>
           <li class="lots__card-list-item">
             <a class="card-link">
               <article class="card card card_type_picture">
-                <div class="overlay">
-                  <h3 class="card__title">
-                    Картина, которую повторит даже 5-летний сын маминой подруги
-                  </h3>
-                  <p class="card__text">
-                    Ну действительно, там линия, тут кружочек, а здесь и вовсе
-                    что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
-                    котиков...&nbsp;&nbsp;&nbsp;Сколько бы вы на такое
-                    поставили, если бы не знали, что это — одна из революционных
-                    работ Кандинского?
-                  </p>
-                </div>
+                <div class="overlay"></div>
+                <h3 class="card__title">
+                  Картина, которую повторит даже 5-летний сын маминой подруги
+                </h3>
+                <p class="card__text">
+                  Ну действительно, там линия, тут кружочек, а здесь и вовсе
+                  что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
+                  котиков...&nbsp;&nbsp;&nbsp;Сколько бы вы на такое поставили,
+                  если бы не знали, что это — одна из революционных работ
+                  Кандинского?
+                </p>
               </article>
             </a>
           </li>
@@ -149,10 +145,10 @@
       </section>
     </main>
     <footer class="footer">
-      <address class="footer__address">
-        <a href="tel:+99995555555">+9 999 555 5555</a><br />
-        <a href="mailto:info@sobaka.ge">info@sobaka.ge</a><br />
-        наб. Принсенграхт 263- 265, Амстердам<br />
+      <address>
+        <a class="address" href="tel:+99995555555">+9 999 555 5555</a><br />
+        <a class="address" href="mailto:info@sobaka.ge">info@sobaka.ge</a><br />
+        <p class="address">наб. Принсенграхт 263- 265, Амстердам</p>
       </address>
       <nav class="footer__menu">
         <ul class="footer__menu-list">
@@ -169,31 +165,35 @@
           </li>
         </ul>
       </nav>
-      <nav class="footer__social-list">
-        <ul class="footer__social-list-item">
-          <li class="footer__social-link">
+      <ul class="footer__social-list">
+        <li class="footer__social-list-item">
+          <a class="footer__social-link" href="#0">
             <img
               class="footer__social-icon"
               src="./images/yt.svg"
               alt="Логотип Youtube"
             />
-          </li>
-          <li class="footer__social-link">
+          </a>
+        </li>
+        <li class="footer__social-list-item">
+          <a class="footer__social-link" href="#0">
             <img
               class="footer__social-icon"
               src="./images/vk.svg"
               alt="Логотип VK"
             />
-          </li>
-          <li class="footer__social-link">
+          </a>
+        </li>
+        <li class="footer__menu-list-item">
+          <a class="footer__social-link" href="#0">
             <img
               class="footer__social-icon"
               src="./images/pinterest.svg"
               alt="Логотип Printerest"
             />
-          </li>
-        </ul>
-      </nav>
+          </a>
+        </li>
+      </ul>
     </footer>
   </body>
 </html>
