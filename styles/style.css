@@ -183,9 +183,7 @@
   justify-content: space-between;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 100%;
   background-position: center;
-  position: absolute;
   position: relative;
   inset: 0;
   min-height: 563px;
@@ -294,7 +292,6 @@
   justify-content: center;
   display: grid;
   font-size: 18px;
-  justify-content: center;
 }
 
 .footer__menu-list {
