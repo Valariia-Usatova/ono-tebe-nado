@@ -290,7 +290,6 @@
 .footer__menu {
   display: flex;
   justify-content: center;
-  display: grid;
   font-size: 18px;
 }
 
