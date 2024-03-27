@@ -10,7 +10,7 @@
   display: flex;
   border: 1px #000;
   list-style: circle;
-  gap: 30px;
+  gap: 31px;
 }
 
 .header__links-list-item_no-bullit {
@@ -20,6 +20,7 @@
 .header__link {
   list-style: circle;
   text-decoration: underline;
+  text-underline-offset: 4px;
   font-size: 18px;
   font-weight: 400;
   line-height: 21.13px;
@@ -43,6 +44,8 @@
   font-weight: 400;
   line-height: 24.3px;
   letter-spacing: 0.01em;
+  font-style: normal;
+  text-underline-offset: 5px;
 }
 
 .header__address {
@@ -108,13 +111,13 @@
 }
 
 .cover__description-text {
-  margin-right: 3px;
+  margin-right: 5px;
   padding-right: 76px;
   font-size: 22px;
   font-weight: 400;
   line-height: 28px;
   text-align: end;
-  word-spacing: 19px;
+  word-spacing: 18px;
   text-transform: uppercase;
   z-index: 1;
 }
@@ -154,7 +157,7 @@
 
 .lots__card-list-item {
   display: grid;
-  margin-bottom: 32px;
+  margin-bottom: 30px;
   flex-direction: column;
   flex-grow: 1;
 }
@@ -209,6 +212,8 @@
 
 .lots__look-more-link {
   padding-left: 40px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
   color: #000;
   border: 1px #000;
   font-size: 20px;
@@ -226,7 +231,7 @@
 .about__logo {
   display: flex;
   margin-left: 47px;
-  margin-top: 32px;
+  margin-top: 34px;
   justify-content: center;
   align-items: center;
   min-width: 240px;
@@ -269,7 +274,7 @@
 
 .footer {
   display: grid;
-  padding: 180px 50px 88px;
+  padding: 182px 50px 88px;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 140px;
 }
@@ -283,6 +288,7 @@
 .footer__menu-list {
   font-size: 18px;
   font-weight: 400;
+  border: 1px #000;
 }
 
 .footer__menu-list-item {
@@ -292,6 +298,7 @@
 
 .footer__menu-link {
   text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 .footer__menu-link_active {
@@ -305,10 +312,6 @@
 
 .footer__social-list-item {
   list-style: none;
-}
-
-.footer__social-link {
-  gap: 48px;
 }
 
 .footer__social-icon {
